@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  background-color: #27241d;
+}
+.header__status {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &__life {
+
+  }
+  &__life-bar {
+
+  }
+}

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Высота на 100% экрана */
+  margin: 0 auto;
+  width: 400px;
+  background-color: #12110f;
+}
+main {
+  display: flex;
+  flex: 1;
+}

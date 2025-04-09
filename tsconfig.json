@@ -23,5 +23,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
+  },
+  "schematics": {
+  "@schematics/angular:component": {
+    "skipTests": true
+  },
+  "@schematics/angular:service": {
+    "skipTests": true
   }
+}
 }
