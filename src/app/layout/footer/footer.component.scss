@@ -1,9 +1,28 @@
-.footer {
-    background-color: #070707;
-  }
-  .footer-ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    color: white;
-  }
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  gap: 10px;
+}
+
+.footer-button {
+  border-radius: 50%; /* круглая форма кнопки */
+}
+
+.header__status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gold {
+  background-color: #FFD700; /* Золотой цвет */
+  padding: 5px 10px;
+  border-radius: 5px; /* прямоугольник */
+  font-weight: bold;
+}
