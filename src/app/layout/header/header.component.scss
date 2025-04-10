@@ -1,15 +1,27 @@
 .header {
   display: flex;
   background-color: #27241d;
+  margin: 0px -4px;
+  align-items: center;
 }
 .header__status {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   &__life {
 
   }
   &__life-bar {
 
   }
+}
+.gold {
+  background-color: #010205;
+  border: 0.1px solid gold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: gold;
+  font-size: 14px;
 }

@@ -1,3 +1,18 @@
+.footer {
+  background-color: #070707;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Можно настроить отступ */
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(180deg, transparent 50%, #333 50%);
+  border-radius: 50%;
+}
 .footer-nav {
   display: flex;
   justify-content: center;
@@ -7,22 +22,56 @@
   list-style-type: none;
   display: flex;
   padding: 0;
-  gap: 10px;
+  gap: 30px;
 }
 
 .footer-button {
-  border-radius: 50%; /* круглая форма кнопки */
-}
-
-.header__status {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  border-radius: 50%!important;
+  padding: 10px;
+  background-color: #1e1e1e; /* Темный фон для кнопки */
+  transition: all 0.3s ease;
+  border: 2px solid transparent; /* Для плавного эффекта обводки */
+  position: relative;
+  border: 4px solid #0a090f; /* Добавляем красивую границу */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.12); /* Легкая тень для кнопок */
 }
 
-.gold {
-  background-color: #FFD700; /* Золотой цвет */
-  padding: 5px 10px;
-  border-radius: 5px; /* прямоугольник */
-  font-weight: bold;
+.footer-button mat-icon {
+  color: #ad4506;
+}
+
+.footer-button span {
+  position: absolute;
+  font-size: 15px;
+  text-align: center;
+  color: #696969;
+  bottom: -30px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.footer-button:hover {
+  background-color: #333; /* Темный фон при наведении */
+  transform: scale(1.05); /* Увеличение кнопки при наведении */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.15); /* Увеличиваем тень при наведении */
+  border-color: #FFD700; /* Цвет границы меняется при наведении */
+}
+.footer-button:hover mat-icon {
+  color: #FFD700; /* Золотой цвет для иконки */
+}
+.footer-button::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #FFD700; /* Золотая линия под кнопкой */
+  transition: width 0.3s ease;
+}
+.footer-button:hover::after {
+  width: 80%; /* Линия под кнопкой при наведении */
 }
